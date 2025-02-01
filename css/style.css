@@ -1,0 +1,19 @@
+/*_____Global_____*/
+
+@import "global/normalize.css";
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+@import "global/visually-hidden.css";
+
+/*_____Blocks_____*/
+
+@import "blocks/header.css";
+@import "blocks/banner.css";
+@import "blocks/banner-inner.css";
+@import "blocks/main-block.css";
+@import "blocks/main-form.css";
+@import "blocks/form.css";
+@import "blocks/custom-input.css";
+@import "blocks/checkbox-wrapper-46.css";
+@import "blocks/footer.css";
