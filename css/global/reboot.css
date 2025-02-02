@@ -19,20 +19,6 @@ body {
   line-height: 18px;
   color: $color-bokara-grey;
   background-color: $color-hint-of-red; */
-  opacity: 0;
-  transform: translateY(10px);
-  animation: fadeInPage 1s ease-out forwards;
-  position: relative;
-}
-@keyframes fadeInPage {
-  from {
-      opacity: 0;
-      transform: translateY(10px);
-  }
-  to {
-      opacity: 1;
-      transform: translateY(0);
-  }
 }
 .fade-in {
   opacity: 0;

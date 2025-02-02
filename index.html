@@ -348,4 +348,31 @@
     nav.classList.remove("active");
     burgerMenu.classList.remove("hide");
   });
+
+  // Начальное значение флага
+  let isScrolled = false;
+
+  function handleScroll() {
+    // Проверяем, прокручен ли экран более чем на 20 пикселей
+    isScrolled = window.scrollY > 20;
+    console.log('isScrolled:', isScrolled);
+
+    // Находим элементы по классам
+    const header = document.querySelector('.header');
+    const headerWrapper = document.querySelector('.header__wrapper');
+
+    // Если элементы существуют, добавляем или удаляем класс
+    if (header && headerWrapper) {
+      if (isScrolled) {
+        header.classList.add('scroll');
+        headerWrapper.classList.add('scroll');
+      } else {
+        header.classList.remove('scroll');
+        headerWrapper.classList.remove('scroll');
+      }
+    }
+  }
+
+  // Добавляем обработчик события прокрутки
+  window.addEventListener('scroll', handleScroll);
 </script>

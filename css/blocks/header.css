@@ -1,17 +1,28 @@
 .header {
-  /* Сделаем фон темным */
-  padding: 15px 0; /* Чтобы контент не прыгал */
-}
-.header__wrapper {
+  display: block;
   width: 100%;
+  padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+  background-color: #222222;
+  transition: 0.3s;
+  &.scroll {
+    z-index: 102;
+    transition: 0.3s;
+  }
+}
+.header__wrapper {
   padding: 20px 107px;
   display: flex;
   align-items: center;
   gap: 100px;
-  z-index: 11;
+  transition: 0.3s;
+  &.scroll {
+    justify-content: space-between;
+    transition: 0.3s;
+  }
 }
 .header__list {
   display: flex;
